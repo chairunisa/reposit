@@ -4,10 +4,10 @@ import streamlit as st
 
 st.header("ANALISIS SENTIMEN REVIEW APLIKASI PEDULI LINDUNGI")
 
-uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
-for uploaded_file in uploaded_files:
-     bytes_data = uploaded_file.read()
-     st.write("filename:", uploaded_file.name)
+uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file is not None:
+     # To read file as bytes:
+     bytes_data = uploaded_file.getvalue()
      st.write(bytes_data)
 
 with st.sidebar:
