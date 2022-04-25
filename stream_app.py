@@ -10,7 +10,7 @@ with st.sidebar:
     clicked2 = st.button(
         "PraProcess Data"
     )
-     clicked3 = st.button(
+    clicked3 = st.button(
         "MODEL"
     )
     clicked4 = st.button(
