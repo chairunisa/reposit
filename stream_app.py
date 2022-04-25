@@ -10,6 +10,13 @@ with st.sidebar:
     clicked2 = st.button(
         "PraProcess Data"
     )
+     clicked3 = st.button(
+        "MODEL"
+    )
+    clicked4 = st.button(
+        "Visualization"
+    )
+
 
 uploaded_file = st.file_uploader("Choose a file")
      
