@@ -9,7 +9,3 @@ uploaded_file = st.file_uploader("Choose a file")
 dataframe = pd.read_csv(uploaded_file)
 st.write(dataframe)
 
-with st.sidebar:
-    add_button = st.button(
-       ("HOME")
-    )
