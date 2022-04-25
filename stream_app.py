@@ -4,8 +4,11 @@ import pandas as pd
 
 st.header("ANALISIS SENTIMEN REVIEW APLIKASI PEDULI LINDUNGI")
 with st.sidebar:
-    clicked = st.button(
+    clicked1 = st.button(
         "HOME"
+    )
+    clicked2 = st.button(
+        "PraProcess Data"
     )
 
 uploaded_file = st.file_uploader("Choose a file")
