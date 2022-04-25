@@ -1,7 +1,10 @@
 
 import streamlit as st
 
-st.title('Uber pickups in NYC')
+
 st.header("ANALISIS SENTIMEN REVIEW APLIKASI PEDULI LINDUNGI")
 
-
+with st.sidebar:
+    add_button = st.button(
+       ("HOME")
+    )
