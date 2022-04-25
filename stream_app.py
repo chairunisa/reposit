@@ -10,7 +10,7 @@ if uploaded_file is not None:
      st.write(bytes_data)
      
 dataframe = pd.read_csv(uploaded_file)
-     st.write(dataframe)
+st.write(dataframe)
 
 with st.sidebar:
     add_button = st.button(
