@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 
 st.header("ANALISIS SENTIMEN REVIEW APLIKASI PEDULI LINDUNGI")
+
+st.sidebar.header("ANALISIS SENTIMEN")
 with st.sidebar:
     clicked1 = st.button(
         "HOME"
