@@ -1,27 +1,25 @@
 
 import streamlit as st
 import pandas as pd
+from streamlit_option_menu import option_menu
 
 st.header("ANALISIS SENTIMEN REVIEW APLIKASI PEDULI LINDUNGI")
 
-st.sidebar.header("ANALISIS SENTIMEN")
 with st.sidebar:
-    clicked1 = st.button(
-        "HOME"
+    selected = option_menu(
+        menu_title = "ANALISIS SENTIMEN",
+        options = ["Dashboard","Preprocessing","Klasifikasi","Visualisasi"],
     )
-    clicked2 = st.button(
-        "PraProcess Data"
-    )
-    clicked3 = st.button(
-        "MODEL"
-    )
-    clicked4 = st.button(
-        "Visualization"
-    )
-
-
-uploaded_file = st.file_uploader("Choose a file")
+    
+if selected == "Dasboard":
+    st.title(f"UPLOAD DATA {selected}")
+    uploaded_file = st.file_uploader("Choose a file")
      
-dataframe = pd.read_csv(uploaded_file)
-st.write(dataframe)
+    dataframe = pd.read_csv(uploaded_file)
+    st.write(dataframe)
+    
+if selected == "Preprocessing":
+    st.title(f"YOU SELECTED {selected}")
+
+    
 
