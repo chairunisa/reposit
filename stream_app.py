@@ -13,7 +13,7 @@ def navBar():
         
         
 st.set_page_config(page_title='Analysis', layout = "wide")
-menu_id = navbar()
+menu_id = navBar()
 if emnu_id  == 'Home':
     st.write('---------------------------')
     st.write('')
