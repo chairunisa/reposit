@@ -8,7 +8,7 @@ def navBar():
         {'id':"Visualization", 'icon': "fab fa-chart-bar", 'label': "Visualization"},
     ]
     over_theme = {'txc_inactive': #FFFFFF'}
-    menu_id = hc.nav_bar(menu_definition=menu_data, ovveride_theme=over_theme, home_name='Home', first_selected=0)
+    menu_id = hc.nav_bar(menu_definition=menu_data, override_theme=over_theme, home_name='Home', first_selected=0)
     return menu_id
         
         
