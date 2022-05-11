@@ -13,10 +13,7 @@ with st.sidebar:
     
 if selected == "Dasboard":
     st.title(f"UPLOAD DATA {selected}")
-    uploaded_file = st.file_uploader("Choose a file")
-     
-    dataframe = pd.read_csv(uploaded_file)
-    st.write(dataframe)
+
     
 if selected == "Preprocessing":
     st.title(f"YOU SELECTED {selected}")
