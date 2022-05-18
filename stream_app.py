@@ -79,16 +79,16 @@ def main():
         st.subheader('Pelabelan')
 
         lexicon_positive= dict()
-        path = 'https://drive.google.com/file/d/1DKpBdnlFO-SgyidUhjS0U-cIw-H6snzN/view?usp=sharing'
-        reader = pd.read_csv(path, delimiter=',')
-        for row in reader:
-            lexicon_positive[row[0]] = (row[1])
+        with open('lexicon_positive.csv','r') as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            for row in reader:
+                lexicon_positive[row[0]] = (row[1])
                 
         lexicon_negative= dict()
-        path = 'https://drive.google.com/file/d/1yh24Yo861r8NFgToAyxiu3FIFblC8jPO/view?usp=sharing'
-        reader = pd.read_csv(path, delimiter=',')
-        for row in reader:
-            lexicon_negative[row[0]] = (row[1])
+        with open('lexicon_negative.csv','r') as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            for row in reader:
+                lexicon_negative[row[0]] = (row[1])
 
         def sentimen(clean_data):
             score = 0
